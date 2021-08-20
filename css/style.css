@@ -1,7 +1,57 @@
+:root {
+	--main-color: #024486ec;
+}
+
 body {
 	direction: rtl
 }
 
 .rtl {
 	direction: rtl
+}
+
+.nav-custom {
+	background-color: var(--main-color) !important;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	color: aliceblue !important;
+	height: 6%;
+}
+
+.navbar-light .navbar-brand,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show>.nav-link,
+.navbar-light .navbar-nav .nav-link {
+
+	color: aliceblue;
+}
+
+/* .navbar-toggler {
+	margin-top: -10px;
+	padding-top: 0px !important;
+} */
+
+.navbar-brand {
+	direction: ltr;
+	/* justify-self: center; */
+	position: absolute;
+	left: 0px !important;
+}
+
+.logo {
+	width: 30%;
+	margin: 0px 0px;
+	padding: 0px 0px;
+	/* margin-top: 15px; */
+
+}
+
+.navbar-toggler {
+	background-color: aliceblue;
+}
+
+.collapse .navbar-collapse {
+	/* margin-top: 10px; */
 }
