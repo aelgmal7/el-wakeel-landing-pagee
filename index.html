@@ -1,15 +1,36 @@
-<html>
+<html dir="rtl">
 
 <head>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+		<div class="carousel-inner">
+		  <div class="carousel-item active">
+			<img src="a.jpg" class="d-block w-60" alt="...">
+		  </div>
+		  <!-- <div class="carousel-item">
+			<img src="b.jpg" class="d-block w-60" alt="...">
+		  </div> -->
+		  <div class="carousel-item">
+			<img src="c.jpeg" class="d-block w-60" alt="...">
+		  </div>
+		</div>
+		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+		  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		  <span class="visually-hidden">Previous</span>
+		</button>
+		<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+		  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		  <span class="visually-hidden">Next</span>
+		</button>
+	  </div>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light ">
 		<div class="container-fluid">
-			<a class="navbar-brand" href="#">Navbar</a>
+			<a class="navbar-brand " href="#">Navbar</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
 			data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
 			aria-label="Toggle navigation">
@@ -37,14 +58,9 @@
 						<li><a class="dropdown-item" href="#">Something else here</a></li>
 					</ul>
 					</li>
-					<li class="nav-item">
-						<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-					</li>
+					
 				</ul>
-				<form class="d-flex">
-					<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-					<button class="btn btn-outline-success" type="submit">Search</button>
-				</form>
+			
 			</div>
 		</div>
 	</nav>
@@ -61,6 +77,8 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
 	integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
 	crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+
 	<script src="js/main.js"></script>
 </body>
 
