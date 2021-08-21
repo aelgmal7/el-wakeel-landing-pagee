@@ -19,7 +19,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  color: var(--second-color)!important;
+  color: var(--second-color) !important;
   height: 6%;
 }
 
@@ -27,7 +27,7 @@ body {
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .show > .nav-link,
 .navbar-light .navbar-nav .nav-link {
-	color: var(--second-color)!important;
+  color: var(--second-color) !important;
 }
 
 /* .navbar-toggler {
@@ -51,4 +51,19 @@ body {
 
 .navbar-toggler {
   background-color: var(--second-color);
+}
+
+.secondBlock {
+  font-size: 60px;
+  font-weight: 600;
+  background-color: white;
+  text-align: center;
+  margin: auto;
+  box-shadow: 0px 0px 10px grey;
+  padding: 40px 20px;
+}
+
+.blockIcon {
+  color: #024486ec;
+  margin-bottom: 10px;
 }
