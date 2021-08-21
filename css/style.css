@@ -62,3 +62,14 @@ body {
   height: 200px;
   border-radius: 50%;
 }
+.carousel-app {
+  margin: auto;
+  width: 500px;
+  height: 500px;
+  z-index: 400;
+}
+.modal-app {
+  width: 500px;
+  height: 500px;
+  /* background: red; */
+}
