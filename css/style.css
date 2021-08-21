@@ -19,7 +19,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  color: var(--second-color)!important;
+  color: var(--second-color) !important;
   height: 6%;
 }
 
@@ -27,7 +27,7 @@ body {
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .show > .nav-link,
 .navbar-light .navbar-nav .nav-link {
-	color: var(--second-color)!important;
+  color: var(--second-color) !important;
 }
 
 /* .navbar-toggler {
@@ -51,4 +51,14 @@ body {
 
 .navbar-toggler {
   background-color: var(--second-color);
+}
+
+.logos-section {
+  padding-top: 210px;
+}
+
+.logos-section img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
 }
