@@ -1,5 +1,6 @@
 :root {
   --main-color: #024486ec;
+  --second-color: #f0f8ff;
 }
 /* #024386 */
 body {
@@ -18,7 +19,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  color: aliceblue !important;
+  color: var(--second-color)!important;
   height: 6%;
 }
 
@@ -26,7 +27,7 @@ body {
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .show > .nav-link,
 .navbar-light .navbar-nav .nav-link {
-  color: aliceblue;
+	color: var(--second-color)!important;
 }
 
 /* .navbar-toggler {
@@ -49,5 +50,5 @@ body {
 }
 
 .navbar-toggler {
-  background-color: aliceblue;
+  background-color: var(--second-color);
 }
