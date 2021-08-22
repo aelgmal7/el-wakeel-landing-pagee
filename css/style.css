@@ -3,12 +3,17 @@
   --second-color: #f0f8ff;
 }
 /* #024386 */
+a{
+	text-decoration: none;
+	color: white;
+}
 body {
   direction: rtl;
   font-family: 'Courier New', Courier, monospace;
   font-size: 18px;
   font-weight: 700;
   background-color: white;
+  
 }
 .navbar>.container-fluid{
 	background-color: white;
@@ -21,16 +26,16 @@ body {
 	background-color: white;
 }
 .nav-custom {
-  /* background-color: var(--main-color) !important; */
+  background-color: white !important;
 padding: 0;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   color: var(--second-color) !important;
-  height: 6%;
+  height: 8%;
   margin: 0px;
-  /* box-shadow: none; */
+  box-shadow: none;
 }
 .bars-icon{
 	color: orange;
@@ -50,14 +55,14 @@ padding: 0;
   direction: ltr;
   /* justify-self: center; */
   position: absolute;
-  left: 0px !important;
+  right: 0px !important;
 }
 .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl
 {
 	/* background-color:var(--main-color); */
 } 
 .logo {
-  width: 30%;
+  width: 40%;
   margin: 0px 0px;
   padding: 0px 0px;
   margin-top: 15px;
@@ -92,4 +97,18 @@ padding: 0;
 	-o-border-radius: 7px;
 	justify-content: center;
 	/* box-shadow: 0px 0px 1px var(--main-color); */
+	position: fixed;
+	bottom:2%;border:none;
+	right:30px;
+	width: 35px;
+	height: 40px;
+}
+#footer{
+	position: fixed;
+	margin-top: 150px;
+	bottom: 0;
+	width: 100%;
+	background-color: var(--main-color);
+	opacity: 1;
+	z-index: 0;
 }
