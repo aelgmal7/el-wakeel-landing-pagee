@@ -3,9 +3,9 @@
   --second-color: #f0f8ff;
 }
 /* #024386 */
-a{
-	text-decoration: none;
-	color: white;
+a {
+  text-decoration: none;
+  color: white;
 }
 body {
   direction: rtl;
@@ -13,7 +13,6 @@ body {
   font-size: 18px;
   font-weight: 700;
   background-color: white;
-  
 }
 .navbar > .container-fluid {
   background-color: white;
@@ -27,7 +26,7 @@ body {
 }
 .nav-custom {
   background-color: white !important;
-padding: 0;
+  padding: 0;
   position: fixed;
   top: 0;
   left: 0;
@@ -89,6 +88,7 @@ padding: 0;
 } */
 
 .secondBlock {
+  position: relative;
   font-size: 60px;
   font-weight: 600;
   background-color: white;
@@ -96,6 +96,8 @@ padding: 0;
   margin: auto;
   box-shadow: 0px 0px 10px grey;
   padding: 40px 20px;
+  margin-top: -100px;
+  z-index: 2;
 }
 .secondBlock  h2{
 	color:orange;
@@ -185,5 +187,3 @@ padding: 0;
   justify-content: center;
   /* box-shadow: 0px 0px 1px var(--main-color); */
 }
-
-/* ------- */

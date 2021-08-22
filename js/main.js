@@ -1,12 +1,12 @@
 console.log("hellow")
 
-// document.getElementById("myBtn").addEventListener('click',function(){
+document.getElementById("myBtn").addEventListener('click',function(){
 
-//       window.scrollTo({
-//           top:0,
-//           behavior:"smooth"
-//         })
-//     })
+      window.scrollTo({
+          top:0,
+          behavior:"smooth"
+        })
+    })
 
 
     var typed = new Typed('.typedText', {
