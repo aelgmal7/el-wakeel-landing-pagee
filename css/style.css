@@ -5,31 +5,42 @@
 /* #024386 */
 body {
   direction: rtl;
-  font-family: "Roboto", sans-serif;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: white;
+}
+.navbar > .container-fluid {
+  background-color: white;
 }
 
 .rtl {
   direction: rtl;
 }
-
+.navbar-collapse {
+  background-color: white;
+}
 .nav-custom {
-  background-color: var(--main-color) !important;
-
+  /* background-color: var(--main-color) !important; */
+  padding: 0;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   color: var(--second-color) !important;
   height: 6%;
+  margin: 0px;
+  box-shadow: none;
 }
-
-.navbar-light .navbar-brand,
-.navbar-light .navbar-nav .nav-link.active,
-.navbar-light .navbar-nav .show > .nav-link,
-.navbar-light .navbar-nav .nav-link {
-  color: var(--second-color) !important;
+.bars-icon {
+  color: orange;
 }
-
+.nav-link {
+  color: var(--main-color) !important;
+}
+.nav-link:hover {
+  color: orange !important;
+}
 /* .navbar-toggler {
 	margin-top: -10px;
 	padding-top: 0px !important;
@@ -48,7 +59,16 @@ body {
 .navbar > .container-sm,
 .navbar > .container-xl,
 .navbar > .container-xxl {
-  background-color: var(--main-color);
+  /* background-color: var(--main-color); */
+}
+.navbar > .container,
+.navbar > .container-fluid,
+.navbar > .container-lg,
+.navbar > .container-md,
+.navbar > .container-sm,
+.navbar > .container-xl,
+.navbar > .container-xxl {
+  /* background-color:var(--main-color); */
 }
 .logo {
   width: 30%;
@@ -57,9 +77,9 @@ body {
   margin-top: 15px;
 }
 
-.navbar-toggler {
-  background-color: var(--second-color);
-}
+/* .navbar-toggler {
+  background-color: black ;
+} */
 
 .secondBlock {
   font-size: 60px;
@@ -77,7 +97,6 @@ body {
 }
 
 .active {
-  color: aqua;
 }
 
 #header-section {
@@ -99,6 +118,7 @@ body {
   left: 0;
   bottom: 0;
   right: 0;
+  margin-top: 85px;
 }
 
 /* #header-block:before {
@@ -112,9 +132,20 @@ body {
   position: relative;
   z-index: 1;
   margin-right: 200px;
-  margin-top: 100px;
+  margin-top: 150px;
 }
 
 .headerText {
-  font-size: 50px;
+  font-size: 40px;
+}
+#myBtn {
+  padding: 1px 9px;
+  font-size: 25px;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  justify-content: center;
+  /* box-shadow: 0px 0px 1px var(--main-color); */
 }
