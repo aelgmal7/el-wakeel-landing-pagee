@@ -14,5 +14,8 @@ $(document).ready(function(){
     var typed = new Typed('.typedText', {
       strings: ["نوفر خدمة الصيانة لجميع محافظات واقاليم ومدن مصر.", "متاحين طوال ايام الاسبوع.", "توفير وسيلة النقل اذا لزم نقل الجهاز من المنزل.", "نعمل بجد و نسعى لتحقيق مستوى جديد من الانجازات."],
       typeSpeed: 30,
-      loop: true
+      loop: true,showCursor: true,
+      startDelay: 500,
+    //   shuffle:true,
+      backSpeed:20
     });
