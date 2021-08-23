@@ -133,6 +133,9 @@ body {
   font-weight: 300;
   color: var(--white-color);
 }
+.footer-p {
+  color: var(--second-color);
+}
 
 .blockIcon {
   color: var(--main-color);
