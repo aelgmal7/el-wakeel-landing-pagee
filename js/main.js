@@ -1,117 +1,108 @@
 console.log("hellow")
-const brandSection = document.querySelector('#brand-container')
+const brandSection = document.querySelector("#brand-container")
 /* add scroll event listener */
 // side button
-document.getElementById("myBtn").addEventListener('click',function(){
-
-      window.scrollTo({
-          top:0,
-          behavior:"smooth"
-        })
-        
-    })
-
-    //header scroll
-    const brandContainer =document.getElementById("brand-container")
-    console.log( brandContainer.offsetHeight)
-  document.getElementById("brands-scroll").addEventListener('click',function(){
-
-    window.scrollTo({
-        top:brandContainer.offsetHeight- 300,
-        behavior:"smooth"
-      })
-      
+document.getElementById("myBtn").addEventListener("click", function () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
   })
-  
-$(window).scroll(function (e) { 
-  if ($(window).scrollTop() > 800){
-$("#myBtn").fadeIn(500)
-  }
-   else $("#myBtn").fadeOut(500)
-  
-});
+})
+
+//header scroll
+const brandContainer = document.getElementById("brand-container")
+console.log(brandContainer.offsetHeight)
+document.getElementById("brands-scroll").addEventListener("click", function () {
+  window.scrollTo({
+    top: brandContainer.offsetHeight - 300,
+    behavior: "smooth",
+  })
+})
+
+$(window).scroll(function (e) {
+  if ($(window).scrollTop() > 800) {
+    $("#myBtn").fadeIn(500)
+  } else $("#myBtn").fadeOut(500)
+})
 $("#myBtn").fadeOut(500)
 
-
-
-
-
-
-
-
 /* */
-    var typed = new Typed('.typedText', {
-      strings: ["نوفر خدمة الصيانة لجميع محافظات واقاليم ومدن مصر.", "متاحين طوال ايام الاسبوع.", "توفير وسيلة النقل اذا لزم نقل الجهاز من المنزل.", "نعمل بجد و نسعى لتحقيق مستوى جديد من الانجازات."],
-      typeSpeed: 30,
-      loop: true,showCursor: true,
-      startDelay: 500,
-    //   shuffle:true,
-      backSpeed:20
-    });
-  let toggleBrandShow = false
-    // brands data
-    const brands = [
-      {
-        brandName: 'Toshiba',
-        phoneNumber: '01129379928',
-        brandLogo : 'assests/Samsung_logo_blue.png' ,
-        imgSrc: [
-          
-         'assests/Samsung_logo_blue.png',
-         'assests/شركة-يونيفرسال.jpg',
-         'assests/لوجو.png'
-        ]
-      },
-      {
-        brandName: 'Toshiba',
-        phoneNumber: '01129379928',
-        brandLogo : 'assests/Samsung_logo_blue.png' ,
-        imgSrc: [
-          
-         'assests/Samsung_logo_blue.png',
-         'assests/شركة-يونيفرسال.jpg',
-         'assests/لوجو.png'
-        ]
-      },
-      {
-        brandName: 'Toshiba',
-        phoneNumber: '01129379928',
-        brandLogo : 'assests/Samsung_logo_blue.png' ,
-        imgSrc: [
-          
-         'assests/Samsung_logo_blue.png',
-         'assests/شركة-يونيفرسال.jpg',
-         'assests/لوجو.png'
-        ]
-      }, {
-        brandName: 'Toshiba',
-        phoneNumber: '01129379928',
-        brandLogo : 'assests/Samsung_logo_blue.png' ,
-        imgSrc: [
-          
-         'assests/Samsung_logo_blue.png',
-         'assests/شركة-يونيفرسال.jpg',
-         'assests/لوجو.png'
-        ]
-      }
-    ]
-    let count =0
-    let renderedBrands = ''
-    const showBrands = () => {
-
-    brands.map(b =>{
-     const tmp = toggleBrandShow?  getPrefix(b.brandLogo,b.phoneNumber,b.imgSrc) : getPostfix(b.brandLogo,b.phoneNumber,b.imgSrc)
+var typed = new Typed(".typedText", {
+  strings: [
+    "نوفر خدمة الصيانة لجميع محافظات واقاليم ومدن مصر.",
+    "متاحين طوال ايام الاسبوع.",
+    "توفير وسيلة النقل اذا لزم نقل الجهاز من المنزل.",
+    "نعمل بجد و نسعى لتحقيق مستوى جديد من الانجازات.",
+  ],
+  typeSpeed: 30,
+  loop: true,
+  showCursor: true,
+  startDelay: 500,
+  //   shuffle:true,
+  backSpeed: 20,
+})
+let toggleBrandShow = false
+// brands data
+const brands = [
+  {
+    brandName: "Toshiba",
+    phoneNumber: "01129379928",
+    brandLogo: "assests/Samsung_logo_blue.png",
+    imgSrc: [
+      "assests/Samsung_logo_blue.png",
+      "assests/شركة-يونيفرسال.jpg",
+      "assests/لوجو.png",
+    ],
+  },
+  {
+    brandName: "Toshiba",
+    phoneNumber: "01129379928",
+    brandLogo: "assests/Samsung_logo_blue.png",
+    imgSrc: [
+      "assests/Samsung_logo_blue.png",
+      "assests/شركة-يونيفرسال.jpg",
+      "assests/لوجو.png",
+    ],
+  },
+  {
+    brandName: "Toshiba",
+    phoneNumber: "01129379928",
+    brandLogo: "assests/Samsung_logo_blue.png",
+    imgSrc: [
+      "assests/Samsung_logo_blue.png",
+      "assests/شركة-يونيفرسال.jpg",
+      "assests/لوجو.png",
+    ],
+  },
+  {
+    brandName: "Toshiba",
+    phoneNumber: "01129379928",
+    brandLogo: "assests/Samsung_logo_blue.png",
+    imgSrc: [
+      "assests/Samsung_logo_blue.png",
+      "assests/شركة-يونيفرسال.jpg",
+      "assests/لوجو.png",
+    ],
+  },
+]
+let count = 0
+let renderedBrands = ""
+const showBrands = () => {
+  brands.map((b) => {
+    const tmp = toggleBrandShow
+      ? getPrefix(b.brandLogo, b.phoneNumber, b.imgSrc)
+      : getPostfix(b.brandLogo, b.phoneNumber, b.imgSrc)
     //  renderedBrands.push(tmp)
     renderedBrands += tmp
-    count++;
+    count++
 
-      // toggleBrandShow = !toggleBrandShow
-    })
-  }
+    // toggleBrandShow = !toggleBrandShow
+  })
+}
 
-    const getPrefix = (brandLogo,phoneNumber,imgSrc) => {
-      console.log(brandLogo,phoneNumber,imgSrc)
-      return `
+const getPrefix = (brandLogo, phoneNumber, imgSrc) => {
+  console.log(brandLogo, phoneNumber, imgSrc)
+  return `
       
       <div class="container slider-container mb-5">
       <div class="row">
@@ -162,10 +153,10 @@ $("#myBtn").fadeOut(500)
       </div>
     </div>
       `
-    } 
-const getPostfix = (brandLogo,phoneNumber,imgSrc) => {
-      console.log(brandLogo,phoneNumber,imgSrc)
-      return `
+}
+const getPostfix = (brandLogo, phoneNumber, imgSrc) => {
+  console.log(brandLogo, phoneNumber, imgSrc)
+  return `
       <div class="container slider-container mb-5">
       <div class="row">
         <div class="col-8">
@@ -216,12 +207,12 @@ const getPostfix = (brandLogo,phoneNumber,imgSrc) => {
     </div>
 
       `
-    } 
+}
 
+console.log("🚀 ~ file: main.js ~ line 91 ~ brandSection", brandSection)
 
-    console.log("🚀 ~ file: main.js ~ line 91 ~ brandSection", brandSection)
-
-    window.addEventListener('load', () => {
-      showBrands()
-      brandSection.innerHTML = renderedBrands
-    })
+window.addEventListener("load", () => {
+  showBrands()
+  brandSection.innerHTML = renderedBrands
+  $(".secondBlock").animate({ marginTop: "-120px" }, 350)
+})

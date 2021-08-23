@@ -107,7 +107,7 @@ body {
   margin: auto;
   box-shadow: 0px 0px 10px grey;
   padding: 40px 20px;
-  margin-top: -120px;
+  margin-top: -40px;
   z-index: 2;
 }
 .secondBlock h2 {
@@ -125,6 +125,14 @@ body {
 }
 .text-left {
   text-align: left;
+}
+.text-left .mt-4 {
+  color: orange;
+  font-weight: 400;
+}
+.text-left .mt-4 div a {
+  opacity: 0.7;
+  color: red !important;
 }
 .blockIcon {
   color: var(--main-color);
@@ -147,10 +155,10 @@ body {
   /*box-shadow: 0px 0px 1px var(--main-color);
   */
   position: fixed;
-  bottom: 20%;
+  bottom: 5%;
   /*border: none;
   */
-  right: 8%;
+  right: 4%;
   width: 35px;
   height: 40px;
   z-index: 5;
