@@ -23,6 +23,9 @@ $(window).scroll(function (e) {
   if ($(window).scrollTop() > 800) {
     $("#myBtn").fadeIn(500)
   } else $("#myBtn").fadeOut(500)
+  $(".slider-container0").animate({left:"0px"},700)
+    
+    $(".slider-container1").animate({left:"0px"},700)
 })
 $("#myBtn").fadeOut(500)
 
@@ -51,7 +54,7 @@ const brands = [
     imgSrc: [
       "assests/Samsung_logo_blue.png",
       "assests/شركة-يونيفرسال.jpg",
-      "assests/لوجو.png",
+      "assests/hitachi-2-logo.png",
     ],
   },
   {
@@ -61,7 +64,7 @@ const brands = [
     imgSrc: [
       "assests/Samsung_logo_blue.png",
       "assests/شركة-يونيفرسال.jpg",
-      "assests/لوجو.png",
+      "assests/hitachi-2-logo.png",
     ],
   },
   {
@@ -71,7 +74,7 @@ const brands = [
     imgSrc: [
       "assests/Samsung_logo_blue.png",
       "assests/شركة-يونيفرسال.jpg",
-      "assests/لوجو.png",
+      "assests/hitachi-2-logo.png",
     ],
   },
   {
@@ -81,7 +84,7 @@ const brands = [
     imgSrc: [
       "assests/Samsung_logo_blue.png",
       "assests/شركة-يونيفرسال.jpg",
-      "assests/لوجو.png",
+      "assests/hitachi-2-logo.png",
     ],
   },
 ]
@@ -96,7 +99,7 @@ const showBrands = () => {
     renderedBrands += tmp
     count++
 
-    // toggleBrandShow = !toggleBrandShow
+     toggleBrandShow = !toggleBrandShow
   })
 }
 
@@ -104,7 +107,7 @@ const getPrefix = (brandLogo, phoneNumber, imgSrc) => {
   console.log(brandLogo, phoneNumber, imgSrc)
   return `
       
-      <div class="container slider-container mb-5">
+      <div class="container slider-container0 mb-5 ">
       <div class="row">
         <div class="col-4">
         <div class="container">
@@ -157,8 +160,24 @@ const getPrefix = (brandLogo, phoneNumber, imgSrc) => {
 const getPostfix = (brandLogo, phoneNumber, imgSrc) => {
   console.log(brandLogo, phoneNumber, imgSrc)
   return `
-      <div class="container slider-container mb-5">
+      <div class="container slider-container1 mb-5">
       <div class="row">
+      <div class="col-4">
+        <div class="container">
+          <div class="row text-center mt-lg-5 mt-md-4 mt-sm-3">
+            <div class="col-12">
+              <img src="${brandLogo}" class="img-fluid" />
+              <hr class="w-75 m-auto mb-4 opacity-40" />
+            </div>
+            <div class="col-12">
+              <a class="contactBtn btn btn-primary" href="tel:${phoneNumber}">
+                <h4>اتصل الأن</h4>
+                <span  style="color:orange">${phoneNumber}</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        </div>
         <div class="col-8">
           <div id="carouselExampleIndicators-${count}" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
@@ -187,22 +206,7 @@ const getPostfix = (brandLogo, phoneNumber, imgSrc) => {
             </button>
           </div>
         </div>
-        <div class="col-4">
-        <div class="container">
-          <div class="row text-center mt-lg-5 mt-md-4 mt-sm-3">
-            <div class="col-12">
-              <img src="${brandLogo}" class="img-fluid" />
-              <hr class="w-75 m-auto mb-4 opacity-40" />
-            </div>
-            <div class="col-12">
-              <a class="contactBtn btn btn-primary" href="tel:${phoneNumber}">
-                <h4>اتصل الأن</h4>
-                <span  style="color:orange">${phoneNumber}</span>
-              </a>
-            </div>
-          </div>
-        </div>
-        </div>
+        
       </div>
     </div>
 
@@ -215,4 +219,6 @@ window.addEventListener("load", () => {
   showBrands()
   brandSection.innerHTML = renderedBrands
   $(".secondBlock").animate({ marginTop: "-120px" }, 350)
+  
+  
 })
