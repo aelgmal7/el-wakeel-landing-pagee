@@ -104,7 +104,7 @@ const getPrefix = (brandLogo, phoneNumber, imgSrc) => {
   console.log(brandLogo, phoneNumber, imgSrc)
   return `
       
-      <div class="container slider-container mb-5">
+      <div class="container slider-container mb-5" data-aos="fade-right">
       <div class="row">
         <div class="col-4">
         <div class="container">
@@ -216,3 +216,7 @@ window.addEventListener("load", () => {
   brandSection.innerHTML = renderedBrands
   $(".secondBlock").animate({ marginTop: "-120px" }, 350)
 })
+
+// window.addEventListener('scroll', () => {
+//   $(".slider-container").animate({ marginLeft: '185px' }, 350)
+// })
