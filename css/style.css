@@ -123,6 +123,9 @@ body {
   width: 70%;
   margin: auto;
 }
+.text-left {
+  text-align: left;
+}
 .blockIcon {
   color: var(--main-color);
   margin-bottom: 10px;
