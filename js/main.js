@@ -1,15 +1,45 @@
 console.log("hellow")
 const brandSection = document.querySelector('#brand-container')
-
+/* add scroll event listener */
+// side button
 document.getElementById("myBtn").addEventListener('click',function(){
 
       window.scrollTo({
           top:0,
           behavior:"smooth"
         })
+        
     })
 
+    //header scroll
+    const brandContainer =document.getElementById("brand-container")
+    console.log( brandContainer.offsetHeight)
+  document.getElementById("brands-scroll").addEventListener('click',function(){
 
+    window.scrollTo({
+        top:brandContainer.offsetHeight- 300,
+        behavior:"smooth"
+      })
+      
+  })
+  
+$(window).scroll(function (e) { 
+  if ($(window).scrollTop() > 800){
+$("#myBtn").fadeIn(500)
+  }
+   else $("#myBtn").fadeOut(500)
+  
+});
+$("#myBtn").fadeOut(500)
+
+
+
+
+
+
+
+
+/* */
     var typed = new Typed('.typedText', {
       strings: ["نوفر خدمة الصيانة لجميع محافظات واقاليم ومدن مصر.", "متاحين طوال ايام الاسبوع.", "توفير وسيلة النقل اذا لزم نقل الجهاز من المنزل.", "نعمل بجد و نسعى لتحقيق مستوى جديد من الانجازات."],
       typeSpeed: 30,
