@@ -190,8 +190,8 @@ body {
 }
 
 .contactBtn {
-  background-color: white;
-  color: var(--main-color);
+  background-color: var(--main-color);
+  color: white;
   border: 1px solid var(--main-color);
   border-radius: 0.5rem;
   -webkit-border-radius: 0.5rem;
@@ -199,11 +199,23 @@ body {
   -ms-border-radius: 0.5rem;
   -o-border-radius: 0.5rem;
   margin: auto;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
 }
 
 .contactBtn:hover {
   background-color: var(--main-color);
   color: white;
+  background-color: white;
+  color: var(--main-color);
+  transform:translate(0px,-5px)  scale(1.01,1.01);
+  -webkit-transform:translate(0px,-5px)  scale(1.01,1.01);
+  -moz-transform:translate(0px,-5px)  scale(1.01,1.01);
+  -ms-transform:translate(0px,-5px)  scale(1.01,1.01);
+  -o-transform:translate(0px,-5px)  scale(1.01,1.01);
 }
 
 .contactBtn h4 {
