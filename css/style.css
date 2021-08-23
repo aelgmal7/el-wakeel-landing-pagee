@@ -1,31 +1,33 @@
 :root {
   --main-color: #024486ec;
   --second-color: #f0f8ff;
+  --white-color: #ffffff;
+  --font-primary: "Roboto", sans-serif;
 }
 /* #024386 */
 #footer a {
   text-decoration: none;
-  color: white;
+  color: var(--white-color);
 }
 body {
   direction: rtl;
-  font-family: "Courier New", Courier, monospace;
+  font-family: var(--font-primary);
   font-size: 18px;
   font-weight: 700;
-  background-color: white;
+  background-color: var(--white-color);
 }
 .navbar > .container-fluid {
-  background-color: white;
+  background-color: var(--white-color);
 }
 
 .rtl {
   direction: rtl;
 }
 .navbar-collapse {
-  background-color: white;
+  background-color: var(--white-color);
 }
 .nav-custom {
-  background-color: white !important;
+  background-color: var(--white-color) !important;
   padding: 0;
   position: fixed;
   top: 0;
@@ -41,7 +43,7 @@ body {
 .bars-icon {
   color: orange;
 }
-.navbar-toggler:focus button{
+.navbar-toggler:focus button {
   outline: none;
   border: none;
 }
@@ -100,7 +102,7 @@ body {
   position: relative;
   font-size: 60px;
   font-weight: 600;
-  background-color: white;
+  background-color: var(--white-color);
   text-align: center;
   margin: auto;
   box-shadow: 0px 0px 10px grey;
@@ -111,16 +113,25 @@ body {
 .secondBlock h2 {
   color: orange;
   font-weight: 800;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
 }
-
+.secondBlock h5 {
+  font-weight: 400;
+  opacity: 0.7;
+  font-size: 18px;
+  width: 70%;
+  margin: auto;
+}
 .blockIcon {
   color: var(--main-color);
   margin-bottom: 10px;
+  font-size: 35px;
 }
 
 #myBtn {
-  color: white;
-  background-color:orange;
+  color: var(--white-color);
+  background-color: orange;
   padding: 1px 9px;
   font-size: 25px;
   border-radius: 7px;
@@ -131,25 +142,25 @@ body {
   justify-content: center;
   border: 1px solid orange;
   /*box-shadow: 0px 0px 1px var(--main-color);
-  */position: fixed;
+  */
+  position: fixed;
   bottom: 20%;
   /*border: none;
-  */right: 8%;
+  */
+  right: 8%;
   width: 35px;
   height: 40px;
   z-index: 5;
-  transition: 0.25s all ;
-  -webkit-transition: 0.25s all ;
-  -moz-transition: 0.25s all ;
-  -ms-transition: 0.25s all ;
-  -o-transition: 0.25s all ;
+  transition: 0.25s all;
+  -webkit-transition: 0.25s all;
+  -moz-transition: 0.25s all;
+  -ms-transition: 0.25s all;
+  -o-transition: 0.25s all;
 }
-#myBtn:hover{
+#myBtn:hover {
   color: orange;
-  background-color: white;
+  background-color: var(--white-color);
   border: 1px solid orange;
-
-
 }
 #footer {
   /* position: absolute; */
@@ -166,7 +177,7 @@ body {
 #header-section {
   position: relative;
   height: 700px;
-  color: white;
+  color: var(--white-color);
   overflow: hidden;
 }
 
@@ -211,7 +222,7 @@ body {
 
 .contactBtn {
   background-color: var(--main-color);
-  color: white;
+  color: var(--white-color);
   border: 1px solid var(--main-color);
   border-radius: 0.5rem;
   -webkit-border-radius: 0.5rem;
@@ -228,14 +239,14 @@ body {
 
 .contactBtn:hover {
   background-color: var(--main-color);
-  color: white;
-  background-color: white;
+  color: var(--white-color);
+  background-color: var(--white-color);
   color: var(--main-color);
-  transform:translate(0px,-5px)  scale(1.01,1.01);
-  -webkit-transform:translate(0px,-5px)  scale(1.01,1.01);
-  -moz-transform:translate(0px,-5px)  scale(1.01,1.01);
-  -ms-transform:translate(0px,-5px)  scale(1.01,1.01);
-  -o-transform:translate(0px,-5px)  scale(1.01,1.01);
+  transform: translate(0px, -5px) scale(1.01, 1.01);
+  -webkit-transform: translate(0px, -5px) scale(1.01, 1.01);
+  -moz-transform: translate(0px, -5px) scale(1.01, 1.01);
+  -ms-transform: translate(0px, -5px) scale(1.01, 1.01);
+  -o-transform: translate(0px, -5px) scale(1.01, 1.01);
 }
 
 .contactBtn h4 {
@@ -247,6 +258,6 @@ body {
   padding: 20px;
 }
 
-.carousel-indicators button{
+.carousel-indicators button {
   background-color: orange !important;
 }
