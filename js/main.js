@@ -49,45 +49,88 @@ let toggleBrandShow = false
 // brands data
 const brands = [
   {
-    brandName: "Toshiba",
-    phoneNumber: "01129379928",
-    brandLogo: "assests/Samsung_logo_blue.png",
+    brandName: "LG",
+    phoneNumber: "01060201205",
+    brandLogo: "assests/logos/LG.jpg",
     imgSrc: [
-      "assests/Samsung_logo_blue.png",
-      "assests/شركة-يونيفرسال.jpg",
-      "assests/hitachi-2-logo.png",
+      "assests/slider/lg1.jpg",
+      "assests/slider/lg2.jpg",
+      "assests/slider/lg3.jpg",
+     
     ],
   },
   {
-    brandName: "Toshiba",
-    phoneNumber: "01129379928",
-    brandLogo: "assests/Samsung_logo_blue.png",
+    brandName: "Alska",
+    phoneNumber: "01114983720",
+    brandLogo: "assests/logos/alska.jpg",
     imgSrc: [
-      "assests/Samsung_logo_blue.png",
-      "assests/شركة-يونيفرسال.jpg",
-      "assests/hitachi-2-logo.png",
+      "assests/slider/alaska1.jpg",
+      "assests/slider/alaska2.jpg",
+      "assests/slider/alaska3.jpg",
+      
     ],
   },
   {
-    brandName: "Toshiba",
-    phoneNumber: "01129379928",
-    brandLogo: "assests/Samsung_logo_blue.png",
+    brandName: "Kiriazi",
+    phoneNumber: "01020301334",
+    brandLogo: "assests/logos/kiriazi.jpg",
     imgSrc: [
-      "assests/Samsung_logo_blue.png",
-      "assests/شركة-يونيفرسال.jpg",
-      "assests/hitachi-2-logo.png",
+      "assests/slider/Kiriazi1.jpg",
+      "assests/slider/Kiriazi2.jpg",
+      "assests/slider/Kiriazi3.jpg",
+
+      
     ],
   },
   {
-    brandName: "Toshiba",
-    phoneNumber: "01129379928",
-    brandLogo: "assests/Samsung_logo_blue.png",
+    brandName: "Universal",
+    phoneNumber: "01002322851",
+    brandLogo: "assests/logos/universal.jpg",
     imgSrc: [
-      "assests/Samsung_logo_blue.png",
-      "assests/شركة-يونيفرسال.jpg",
-      "assests/hitachi-2-logo.png",
+      "assests/slider/Universal1.jpg",
+      "assests/slider/Universal2.jpg",
+      "assests/slider/Universal3.jpg",
+    ],
+  }, {
+    brandName: "hitachi",
+    phoneNumber: "01013213645",
+    brandLogo: "assests/logos/hitachi.jpg",
+    imgSrc: [
+      "assests/slider/hitachi1.jpg",
+      "assests/slider/hitachi2.jpg",
+      "assests/slider/hitachi3.jpg",
+
+    ],
+  }, {
+    brandName: "Electro Star ",
+    phoneNumber: "01119264144",
+    brandLogo: "assests/logos/electroStar.jpg",
+    imgSrc: [
+      "assests/slider/elctro1.jpg",
+      "assests/slider/elctro2.jpg",
+      "assests/slider/elctro3.jpg",
+    ],
+  }, {
+    brandName: "white point",
+    phoneNumber: "01093010064",
+    brandLogo: "assests/logos/whit-point.jpg",
+    imgSrc: [
+      "assests/slider/white1.jpg",
+      "assests/slider/white2.jpg",
+      "assests/slider/white3.jpg",
     ],
   },
+  , {
+    brandName: "samsung",
+    phoneNumber: "01029090494",
+    brandLogo: "assests/logos/samsung.jpg",
+    imgSrc: [
+      "assests/slider/samsung1.jpg",
+      "assests/slider/samsung2.jpg",
+      "assests/slider/samsung3.jpg"
+    ]
+    
+  }
 ]
 let count = 0
 let renderedBrands = ""
