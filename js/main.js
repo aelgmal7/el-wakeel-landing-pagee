@@ -19,13 +19,14 @@ document.getElementById("brands-scroll").addEventListener("click", function () {
   })
 })
 
+
 $(window).scroll(function (e) {
-  if ($(window).scrollTop() > 800) {
+  if ($(window).scrollTop() > 900) {
     $("#myBtn").fadeIn(500)
   } else $("#myBtn").fadeOut(500)
-  $(".slider-container0").animate({left:"0px"},700)
+  $(".slider-container0").animate({left:"0px"},800)
     
-    $(".slider-container1").animate({left:"0px"},700)
+    $(".slider-container1").animate({left:"0px"},800)
 })
 $("#myBtn").fadeOut(500)
 
@@ -107,11 +108,7 @@ const getPrefix = (brandLogo, phoneNumber, imgSrc) => {
   console.log(brandLogo, phoneNumber, imgSrc)
   return `
       
-<<<<<<< HEAD
       <div class="container slider-container0 mb-5 ">
-=======
-      <div class="container slider-container mb-5" data-aos="fade-right">
->>>>>>> 0d734f2577e195f892ee071e605ae1ae5d715fb5
       <div class="row">
         <div class="col-4">
         <div class="container">
