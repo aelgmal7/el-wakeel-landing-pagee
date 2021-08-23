@@ -151,16 +151,16 @@ const getPrefix = (brandLogo, phoneNumber, imgSrc) => {
   console.log(brandLogo, phoneNumber, imgSrc)
   return `
       
-      <div class="container slider-container0 mb-5 ">
+      <div class="container slider-container0 mb-5 " style=" overflow: hidden;">
       <div class="row">
-        <div class="col-4">
+        <div class="col-4" style="z-index:555">
         <div class="container">
           <div class="row text-center mt-lg-5 mt-md-4 mt-sm-3">
             <div class="col-12">
               <img src="${brandLogo}" class="img-fluid" />
               <hr class="w-75 m-auto mb-4 opacity-40" />
             </div>
-            <div class="col-12">
+            <div class="col-12" style="">
               <a class="contactBtn btn btn-primary" href="tel:${phoneNumber}">
                 <h4>اتصل الأن</h4>
                 <span  style="color:orange">${phoneNumber}</span>
@@ -176,7 +176,7 @@ const getPrefix = (brandLogo, phoneNumber, imgSrc) => {
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-            <div class="carousel-inner">
+            <div class="carousel-inner" style="z-index:0;min-width:283px">
               <div class="carousel-item active">
                 <img src="${imgSrc[0]}" class="d-block w-100" alt="...">
               </div>
@@ -204,7 +204,7 @@ const getPrefix = (brandLogo, phoneNumber, imgSrc) => {
 const getPostfix = (brandLogo, phoneNumber, imgSrc) => {
   console.log(brandLogo, phoneNumber, imgSrc)
   return `
-      <div class="container slider-container1 mb-5">
+      <div class="container slider-container1 mb-5" style=" overflow: hidden;">
       <div class="row">
       <div class="col-4">
         <div class="container">
@@ -229,7 +229,7 @@ const getPostfix = (brandLogo, phoneNumber, imgSrc) => {
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-            <div class="carousel-inner">
+            <div class="carousel-inner" style="z-index:0;min-width:283px">
               <div class="carousel-item active">
                 <img src="${imgSrc[0]}" class="d-block w-100" alt="...">
               </div>
